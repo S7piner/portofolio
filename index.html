@@ -3,365 +3,833 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Wilson Zannou · Développeur Full-Stack</title>
-  <meta name="description" content="Wilson Zannou — Développeur Full-Stack Laravel & PHP, basé au Bénin." />
+  <title>D. Stéphane Wilson ZANNOU · Développeur Web Junior | Portfolio</title>
+  <meta name="description" content="Portfolio de D. Stéphane Wilson ZANNOU — Développeur Web Junior spécialisé en PHP, Laravel, JavaScript, MySQL et Android, basé à Porto-Novo, Bénin." />
+  
+  <!-- Fonts Google : Outfit & JetBrains Mono -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  
+  <!-- Stylesheet -->
   <link rel="stylesheet" href="Page.css" />
 </head>
 <body>
 
-  <!-- HEADER -->
+  <!-- BACKGROUND AMBIENT GLOWS -->
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+  <div class="ambient-glow glow-3"></div>
+
+  <!-- NAVIGATION -->
   <header id="header">
     <div class="container nav-wrap">
-      <a href="#hero" class="logo">WZ</a>
+      <a href="#hero" class="brand-logo" title="D. Stéphane Wilson ZANNOU">
+        <span class="logo-mark">SW</span>
+        <span class="logo-text">Wilson.dev</span>
+      </a>
+
       <nav id="nav">
         <a href="#about">À Propos</a>
-        <a href="#skills">Expertise</a>
+        <a href="#stack">Stack</a>
         <a href="#projects">Projets</a>
-        <a href="#experience">Parcours</a>
-        <a href="#contact" class="nav-btn">Contact</a>
+        <a href="#parcours">Parcours</a>
+        <a href="#contact" class="nav-cta">Me Contacter</a>
       </nav>
-      <button class="burger" id="burger" aria-label="Menu">
+
+      <button class="burger" id="burger" aria-label="Menu de navigation">
         <span></span><span></span><span></span>
       </button>
     </div>
   </header>
 
-  <!-- HERO -->
+  <!-- HERO SECTION -->
   <section id="hero">
     <div class="container hero-grid">
 
-      <div class="hero-left">
-        <div class="badge-status">
-          <span class="dot"></span> Disponible pour de nouveaux projets
+      <div class="hero-content">
+        <div class="hero-status-pill">
+          <span class="pulse-dot"></span>
+          <span>Disponible pour opportunités & projets</span>
         </div>
-        <h1>Bonjour, je suis<br /><span class="grad">Wilson Zannou</span></h1>
-        <p class="hero-sub">
-          Développeur <strong>Full-Stack</strong> · Laravel &amp; PHP<br />
-          Je construis des applications web solides, rapides et bien pensées.
+
+        <h1 class="hero-title">
+          D. Stéphane <br />
+          <span class="gradient-text">Wilson ZANNOU</span>
+        </h1>
+
+        <div class="hero-tagline">
+          <span class="code-bracket">&lt;</span>
+          <span class="typing-text">Développeur Web Junior &bull; PHP Laravel &bull; JavaScript &bull; MySQL</span>
+          <span class="code-bracket">/&gt;</span>
+        </div>
+
+        <p class="hero-description">
+          Diplômé d'une <strong>Licence Professionnelle en Système Informatique et Logiciel (SIL)</strong>, 
+          je conçois des applications web performantes, des API robustes et des interfaces modernes axées sur l'expérience utilisateur.
         </p>
-        <div class="hero-btns">
-          <a href="#projects" class="btn-primary">Voir mes projets <i class="fas fa-arrow-right"></i></a>
-          <a href="#contact" class="btn-outline">Me contacter</a>
+
+        <div class="hero-meta-bar">
+          <span class="meta-item"><i class="fas fa-location-dot"></i> Porto-Novo, Bénin</span>
+          <span class="meta-separator">&bull;</span>
+          <span class="meta-item"><i class="fas fa-globe"></i> Remote / Présentiel</span>
+          <span class="meta-separator">&bull;</span>
+          <span class="meta-item"><i class="fas fa-graduation-cap"></i> UPAO – Bénin</span>
         </div>
-        <div class="hero-socials">
-          <a href="https://github.com/" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-          <a href="https://linkedin.com/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-          <a href="mailto:wilsonzannou7@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
-          <a href="https://wa.me/2290152739802" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">
+            <span>Explorer mes projets</span>
+            <i class="fas fa-arrow-down"></i>
+          </a>
+          <a href="https://wa.me/2290152739802" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+            <i class="fab fa-whatsapp"></i>
+            <span>Discuter</span>
+          </a>
+          <a href="https://github.com/S7piner" target="_blank" rel="noopener noreferrer" class="btn btn-icon" title="GitHub / S7piner">
+            <i class="fab fa-github"></i>
+          </a>
         </div>
       </div>
 
-      <div class="hero-right">
-        <div class="avatar-wrap">
-          <img src="wil1.jpeg" alt="Wilson Zannou" class="avatar" />
-        </div>
-        <div class="floating-card fc-top">
-          <i class="fas fa-code"></i>
-          <div><strong>5+</strong><span>Projets livrés</span></div>
-        </div>
-        <div class="floating-card fc-bot">
-          <i class="fas fa-star"></i>
-          <div><strong>98%</strong><span>Satisfaction</span></div>
+      <div class="hero-visual">
+        <div class="profile-card-wrapper">
+          <div class="profile-card">
+            <img src="wil1.jpeg" alt="D. Stéphane Wilson ZANNOU" class="profile-img" />
+            <div class="profile-overlay-badge">
+              <span class="badge-role">Web & Mobile Dev</span>
+              <span class="badge-name">Wilson Zannou</span>
+            </div>
+          </div>
+
+          <!-- FLOATING TECH CHIPS -->
+          <div class="floating-chip chip-laravel">
+            <i class="fab fa-laravel"></i>
+            <span>Laravel / PHP</span>
+          </div>
+          <div class="floating-chip chip-js">
+            <i class="fab fa-js"></i>
+            <span>JavaScript ES6+</span>
+          </div>
+          <div class="floating-chip chip-db">
+            <i class="fas fa-database"></i>
+            <span>MySQL</span>
+          </div>
+          <div class="floating-chip chip-mobile">
+            <i class="fab fa-android"></i>
+            <span>Android / Java</span>
+          </div>
         </div>
       </div>
 
     </div>
   </section>
 
-  <!-- ABOUT -->
+  <!-- BENTO SECTION : À PROPOS & CHIFFRES -->
   <section id="about">
     <div class="container">
-      <div class="section-tag">À Propos de Moi</div>
-      <div class="about-grid">
-        <div class="about-img-wrap reveal">
-          <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=640&q=80" alt="Code" />
-          <div class="about-badge"><i class="fab fa-laravel"></i> Laravel Expert</div>
-        </div>
-        <div class="about-text reveal">
-          <h2>Passionné par le <span class="grad">code propre</span></h2>
-          <p>Développeur passionné avec plus de 2 ans d'expérience dans la construction d'applications web performantes. Mon cœur de métier : Laravel, PHP et tout ce qui tourne autour d'un backend solide et d'une API bien architecturée.</p>
-          <p>Je crois que chaque projet mérite une solution sur mesure — pas un template recyclé. Disponible en remote, je travaille avec des clients en Afrique et en Europe.</p>
-          <div class="about-nums">
-            <div class="num-block">
-              <strong>5<sup>+</sup></strong>
-              <span>Projets réalisés</span>
+      
+      <div class="section-header">
+        <span class="section-kicker">Profil & Vision</span>
+        <h2 class="section-title">Allier rigueur d'ingénierie et <span class="gradient-text">créativité web</span></h2>
+        <p class="section-subtitle">Une vue d'ensemble sur mon parcours, mes compétences relationnelles et mes atouts professionnels.</p>
+      </div>
+
+      <div class="bento-grid">
+        
+        <!-- CARTE 1 : BIO PRINCIPALE (Grande) -->
+        <div class="bento-card bento-card-main reveal">
+          <div class="bento-header">
+            <div class="bento-icon"><i class="fas fa-terminal"></i></div>
+            <span class="bento-tag">Parcours</span>
+          </div>
+          <h3>Passionné par le développement d'applications d'envergure</h3>
+          <p>
+            Titulaire d'une <strong>Licence Professionnelle en Système Informatique et Logiciel (SIL)</strong> délivrée par l'<strong>UPAO – Bénin</strong>, j'ai acquis une expérience pratique solide en concevant des applications réelles : plateformes logistiques, systèmes de vote monétisés, simulateurs algorithmiques et sites institutionnels.
+          </p>
+          <p>
+            Mon approche privilégie une architecture propre (Clean Code), la sécurité des données, l'optimisation des requêtes MySQL et une expérience utilisateur soignée.
+          </p>
+          <div class="bento-stats">
+            <div class="stat-box">
+              <span class="stat-number">6+</span>
+              <span class="stat-label">Projets Concrets</span>
             </div>
-            <div class="num-block">
-              <strong>2<sup>+</sup></strong>
-              <span>Ans d'expérience</span>
+            <div class="stat-box">
+              <span class="stat-number">2</span>
+              <span class="stat-label">Stages Techniques</span>
             </div>
-            <div class="num-block">
-              <strong>98<sup>%</sup></strong>
-              <span>Satisfaction client</span>
+            <div class="stat-box">
+              <span class="stat-number">100%</span>
+              <span class="stat-label">Motivation & Rigueur</span>
             </div>
           </div>
         </div>
+
+        <!-- CARTE 2 : ATOUTS & SOFT SKILLS -->
+        <div class="bento-card reveal">
+          <div class="bento-header">
+            <div class="bento-icon"><i class="fas fa-cubes-stacked"></i></div>
+            <span class="bento-tag">Atouts Clés</span>
+          </div>
+          <h3>Qualités Professionnelles</h3>
+          <div class="tag-cloud">
+            <span class="tag-chip"><i class="fas fa-people-group"></i> Esprit d'équipe</span>
+            <span class="tag-chip"><i class="fas fa-bolt"></i> Apprentissage rapide</span>
+            <span class="tag-chip"><i class="fas fa-list-check"></i> Sens de l'organisation</span>
+            <span class="tag-chip"><i class="fas fa-user-shield"></i> Autonomie</span>
+            <span class="tag-chip"><i class="fas fa-arrows-rotate"></i> Adaptabilité</span>
+            <span class="tag-chip"><i class="fas fa-puzzle-piece"></i> Résolution de problèmes</span>
+          </div>
+        </div>
+
+        <!-- CARTE 3 : LANGUES -->
+        <div class="bento-card reveal">
+          <div class="bento-header">
+            <div class="bento-icon"><i class="fas fa-language"></i></div>
+            <span class="bento-tag">Communication</span>
+          </div>
+          <h3>Langues Pratiquées</h3>
+          <div class="lang-meters">
+            <div class="lang-row">
+              <div class="lang-info">
+                <strong>Français</strong>
+                <span>Courant (Langue de travail)</span>
+              </div>
+              <div class="meter-bar"><div class="meter-fill full"></div></div>
+            </div>
+            <div class="lang-row">
+              <div class="lang-info">
+                <strong>Anglais</strong>
+                <span>Intermédiaire (Technique)</span>
+              </div>
+              <div class="meter-bar"><div class="meter-fill mid"></div></div>
+            </div>
+            <div class="lang-row">
+              <div class="lang-info">
+                <strong>Goun</strong>
+                <span>Courant (Maternelle)</span>
+              </div>
+              <div class="meter-bar"><div class="meter-fill full"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARTE 4 : MAINTENANCE INFORMATIQUE -->
+        <div class="bento-card reveal">
+          <div class="bento-header">
+            <div class="bento-icon"><i class="fas fa-screwdriver-wrench"></i></div>
+            <span class="bento-tag">Polyvalence</span>
+          </div>
+          <h3>Maintenance & Systèmes</h3>
+          <p class="card-desc">Compétences matérielles et logicielles issues d'interventions sur le terrain :</p>
+          <ul class="mini-bullet-list">
+            <li><i class="fas fa-check"></i> Diagnostic matériel & réparation</li>
+            <li><i class="fas fa-check"></i> Maintenance préventive et corrective</li>
+            <li><i class="fas fa-check"></i> Installation et configuration système</li>
+          </ul>
+        </div>
+
       </div>
+
     </div>
   </section>
 
-  <!-- SKILLS -->
-  <section id="skills">
+  <!-- STACK TECHNIQUE INTERACTIF -->
+  <section id="stack">
     <div class="container">
-      <div class="section-tag">Expertise Technique</div>
-      <h2 class="sec-title">Ce que je <span class="grad">maîtrise</span></h2>
-      <p class="sec-sub">Des fondations solides, une progression constante.</p>
 
-      <div class="skills-grid">
-
-        <div class="skill-card reveal">
-          <div class="sk-icon"><i class="fas fa-server"></i></div>
-          <h3>Backend &amp; API</h3>
-          <p class="sk-desc">Architecture server-side robuste et performante</p>
-          <ul class="sk-list">
-            <li>
-              <div class="sk-row"><span>Laravel / PHP</span><span class="sk-pct">95%</span></div>
-              <div class="sk-bar"><div class="sk-fill" data-w="95"></div></div>
-            </li>
-            <li>
-              <div class="sk-row"><span>MySQL</span><span class="sk-pct">88%</span></div>
-              <div class="sk-bar"><div class="sk-fill" data-w="88"></div></div>
-            </li>
-            <li>
-              <div class="sk-row"><span>API REST</span><span class="sk-pct">75%</span></div>
-              <div class="sk-bar"><div class="sk-fill" data-w="75"></div></div>
-            </li>
-          </ul>
-        </div>
-
-        <div class="skill-card reveal">
-          <div class="sk-icon"><i class="fas fa-palette"></i></div>
-          <h3>Frontend &amp; UI</h3>
-          <p class="sk-desc">Interfaces modernes et expériences fluides</p>
-          <ul class="sk-list">
-            <li>
-              <div class="sk-row"><span>HTML5 / CSS3</span><span class="sk-pct">95%</span></div>
-              <div class="sk-bar"><div class="sk-fill" data-w="95"></div></div>
-            </li>
-            <li>
-              <div class="sk-row"><span>Tailwind / Bootstrap</span><span class="sk-pct">85%</span></div>
-              <div class="sk-bar"><div class="sk-fill" data-w="85"></div></div>
-            </li>
-            <li>
-              <div class="sk-row"><span>JavaScript</span><span class="sk-pct">60%</span></div>
-              <div class="sk-bar"><div class="sk-fill" data-w="60"></div></div>
-            </li>
-          </ul>
-        </div>
-
-        <div class="skill-card reveal">
-          <div class="sk-icon"><i class="fas fa-terminal"></i></div>
-          <h3>DevOps &amp; Outils</h3>
-          <p class="sk-desc">Automatisation et déploiement continu</p>
-          <ul class="sk-list">
-            <li>
-              <div class="sk-row"><span>Git / GitHub</span><span class="sk-pct">95%</span></div>
-              <div class="sk-bar"><div class="sk-fill" data-w="95"></div></div>
-            </li>
-            <li>
-              <div class="sk-row"><span>Docker</span><span class="sk-pct">75%</span></div>
-              <div class="sk-bar"><div class="sk-fill" data-w="75"></div></div>
-            </li>
-            <li>
-              <div class="sk-row"><span>CI/CD</span><span class="sk-pct">70%</span></div>
-              <div class="sk-bar"><div class="sk-fill" data-w="70"></div></div>
-            </li>
-          </ul>
-        </div>
-
+      <div class="section-header">
+        <span class="section-kicker">Boîte à Outils</span>
+        <h2 class="section-title">Technologies & <span class="gradient-text">Compétences Clés</span></h2>
+        <p class="section-subtitle">Une sélection de technologies éprouvées que j'utilise pour concevoir des solutions robustes.</p>
       </div>
 
-      <div class="learning-strip">
-        <span class="learn-label"><i class="fas fa-graduation-cap"></i> En apprentissage continu →</span>
-        <div class="learn-tags">
-          <span>React Native</span>
-          <span>Next.js</span>
-          <span>TypeScript</span>
-          <span>GraphQL</span>
-          <span>Vue.js</span>
+      <div class="stack-grid">
+
+        <!-- STACK : BACKEND -->
+        <div class="stack-card reveal">
+          <div class="stack-card-top">
+            <div class="stack-badge backend-badge"><i class="fas fa-server"></i> Back-End & Logiciel</div>
+          </div>
+          <div class="tech-item-list">
+            <div class="tech-pill">
+              <i class="fab fa-laravel tech-icon laravel"></i>
+              <div class="tech-detail">
+                <strong>Laravel</strong>
+                <span>Framework MVC & API REST</span>
+              </div>
+            </div>
+            <div class="tech-pill">
+              <i class="fab fa-php tech-icon php"></i>
+              <div class="tech-detail">
+                <strong>PHP</strong>
+                <span>Programmation Orientée Objet</span>
+              </div>
+            </div>
+            <div class="tech-pill">
+              <i class="fas fa-database tech-icon mysql"></i>
+              <div class="tech-detail">
+                <strong>MySQL</strong>
+                <span>Modélisation & Requêtes SQL</span>
+              </div>
+            </div>
+            <div class="tech-pill">
+              <i class="fas fa-network-wired tech-icon api"></i>
+              <div class="tech-detail">
+                <strong>API REST</strong>
+                <span>Conception & Intégration endpoints</span>
+              </div>
+            </div>
+          </div>
         </div>
+
+        <!-- STACK : FRONTEND -->
+        <div class="stack-card reveal">
+          <div class="stack-card-top">
+            <div class="stack-badge frontend-badge"><i class="fas fa-desktop"></i> Front-End & UI</div>
+          </div>
+          <div class="tech-item-list">
+            <div class="tech-pill">
+              <i class="fab fa-js tech-icon js"></i>
+              <div class="tech-detail">
+                <strong>JavaScript</strong>
+                <span>ES6+, DOM & Asynchronisme</span>
+              </div>
+            </div>
+            <div class="tech-pill">
+              <i class="fab fa-html5 tech-icon html"></i>
+              <div class="tech-detail">
+                <strong>HTML5 & CSS3</strong>
+                <span>Sémantique & Animations</span>
+              </div>
+            </div>
+            <div class="tech-pill">
+              <i class="fab fa-bootstrap tech-icon bootstrap"></i>
+              <div class="tech-detail">
+                <strong>Bootstrap & Responsive</strong>
+                <span>Grilles mobiles & UI moderne</span>
+              </div>
+            </div>
+            <div class="tech-pill">
+              <i class="fas fa-mobile-screen tech-icon responsive"></i>
+              <div class="tech-detail">
+                <strong>Responsive Design</strong>
+                <span>Ergonomie smartphone & PC</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- STACK : MOBILE & OUTILS -->
+        <div class="stack-card reveal">
+          <div class="stack-card-top">
+            <div class="stack-badge mobile-badge"><i class="fas fa-mobile-screen-button"></i> Mobile & Outils</div>
+          </div>
+          <div class="tech-item-list">
+            <div class="tech-pill">
+              <i class="fab fa-android tech-icon android"></i>
+              <div class="tech-detail">
+                <strong>Android Studio</strong>
+                <span>Développement d'apps mobiles</span>
+              </div>
+            </div>
+            <div class="tech-pill">
+              <i class="fab fa-java tech-icon java"></i>
+              <div class="tech-detail">
+                <strong>Java</strong>
+                <span>Logique d'application Android</span>
+              </div>
+            </div>
+            <div class="tech-pill">
+              <i class="fab fa-git-alt tech-icon git"></i>
+              <div class="tech-detail">
+                <strong>Git & GitHub</strong>
+                <span>Versioning & Collaboration</span>
+              </div>
+            </div>
+            <div class="tech-pill">
+              <i class="fas fa-credit-card tech-icon payment"></i>
+              <div class="tech-detail">
+                <strong>Fedapay & Passerelles</strong>
+                <span>Paiement Mobile Money / Carte</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
 
     </div>
   </section>
 
-  <!-- PROJECTS -->
+  <!-- PROJECTS SECTION : SHOWCASE HAUT DE GAMME -->
   <section id="projects">
     <div class="container">
-      <div class="section-tag">Réalisations</div>
-      <h2 class="sec-title">Mes projets <span class="grad">récents</span></h2>
 
-      <div class="proj-grid">
+      <div class="section-header">
+        <span class="section-kicker">Showcase & Réalisations</span>
+        <h2 class="section-title">Mes projets <span class="gradient-text">phares</span></h2>
+        <p class="section-subtitle">Une sélection de 6 applications réelles développées avec rigueur technique et souci du détail.</p>
+      </div>
 
-        <article class="proj-card reveal">
-          <div class="proj-img">
-            <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?auto=format&fit=crop&w=700&q=80" alt="E-commerce" />
-            <div class="proj-overlay">
-              <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i> Démo</a>
-              <a href="#" target="_blank"><i class="fab fa-github"></i> Code</a>
+      <!-- FILTER TABS -->
+      <div class="project-filters">
+        <button class="filter-tab active" data-filter="all">Tous les projets (6)</button>
+        <button class="filter-tab" data-filter="laravel">Laravel & PHP</button>
+        <button class="filter-tab" data-filter="js">JavaScript & Web</button>
+        <button class="filter-tab" data-filter="fintech">FinTech & Gestion</button>
+      </div>
+
+      <!-- PROJECT CARDS GRID -->
+      <div class="projects-grid">
+
+        <!-- PROJET 1 : WilExpress -->
+        <article class="project-card reveal" data-category="laravel">
+          <div class="project-cover">
+            <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=800&q=80" alt="WilExpress - Plateforme de Livraison de Colis" />
+            <div class="cover-badge"><i class="fas fa-truck-fast"></i> Logistique & Suivi</div>
+            <div class="cover-actions">
+              <a href="https://github.com/S7piner" target="_blank" rel="noopener noreferrer" class="btn-cover"><i class="fab fa-github"></i> Code Source</a>
             </div>
           </div>
-          <div class="proj-body">
-            <div class="proj-tags"><span>Laravel</span><span>Vue.js</span><span>MySQL</span><span>Stripe</span></div>
-            <h3>Plateforme E-commerce</h3>
-            <p>Application complète avec gestion produits, panier, paiement sécurisé Stripe et dashboard admin avancé.</p>
+          <div class="project-info">
+            <div class="project-tags">
+              <span>Laravel</span>
+              <span>PHP</span>
+              <span>MySQL</span>
+              <span>Bootstrap</span>
+            </div>
+            <h3 class="project-title">WilExpress &bull; Plateforme de Livraison de Colis</h3>
+            <p class="project-summary">
+              Solution complète de gestion logistique connectant clients, livreurs et administrateurs. Comprend l'authentification multi-rôles, le suivi en direct du statut des colis et un dashboard d'administration dédié.
+            </p>
+            <div class="project-highlights">
+              <span><i class="fas fa-check-circle"></i> Authentification multi-rôles</span>
+              <span><i class="fas fa-check-circle"></i> Dashboard Administrateur</span>
+              <span><i class="fas fa-check-circle"></i> Suivi des flux de colis</span>
+            </div>
           </div>
         </article>
 
-        <article class="proj-card reveal">
-          <div class="proj-img">
-            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=700&q=80" alt="Dashboard" />
-            <div class="proj-overlay">
-              <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i> Démo</a>
-              <a href="#" target="_blank"><i class="fab fa-github"></i> Code</a>
+        <!-- PROJET 2 : Site de Vote avec Fedapay -->
+        <article class="project-card reveal" data-category="laravel fintech">
+          <div class="project-cover">
+            <img src="https://images.unsplash.com/photo-1540910419892-4a36d2c3266c?auto=format&fit=crop&w=800&q=80" alt="Plateforme de Vote et Paiement en Ligne" />
+            <div class="cover-badge"><i class="fas fa-check-to-slot"></i> FinTech & Vote</div>
+            <div class="cover-actions">
+              <a href="https://github.com/S7piner" target="_blank" rel="noopener noreferrer" class="btn-cover"><i class="fab fa-github"></i> Code Source</a>
             </div>
           </div>
-          <div class="proj-body">
-            <div class="proj-tags"><span>Vue.js</span><span>Laravel</span><span>Chart.js</span></div>
-            <h3>Dashboard Analytics</h3>
-            <p>Visualisation de données en temps réel avec graphiques interactifs et rapports personnalisés.</p>
+          <div class="project-info">
+            <div class="project-tags">
+              <span>Laravel</span>
+              <span>PHP</span>
+              <span>MySQL</span>
+              <span>Fedapay</span>
+            </div>
+            <h3 class="project-title">Site de Vote & Passerelle de Paiement</h3>
+            <p class="project-summary">
+              Application web de scrutin monétisé en ligne. Gestion dynamique des candidats et des catégories de vote, couplée à l'intégration de la passerelle Fedapay (Mobile Money MTN/Moov et Carte bancaire) avec validation instantanée.
+            </p>
+            <div class="project-highlights">
+              <span><i class="fas fa-check-circle"></i> Intégration Fedapay (Mobile Money)</span>
+              <span><i class="fas fa-check-circle"></i> Gestion candidats & votes</span>
+              <span><i class="fas fa-check-circle"></i> Dépouillement automatisé</span>
+            </div>
           </div>
         </article>
 
-        <article class="proj-card reveal">
-          <div class="proj-img">
-            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=700&q=80" alt="Mobile" />
-            <div class="proj-overlay">
-              <a href="#" target="_blank"><i class="fas fa-mobile-alt"></i> App Store</a>
-              <a href="#" target="_blank"><i class="fab fa-github"></i> Code</a>
+        <!-- PROJET 3 : Mairie des Jeunes d'Adjarra -->
+        <article class="project-card reveal" data-category="js">
+          <div class="project-cover">
+            <img src="https://images.unsplash.com/photo-1577495508048-b635879837f1?auto=format&fit=crop&w=800&q=80" alt="Mairie des Jeunes d'Adjarra" />
+            <div class="cover-badge"><i class="fas fa-landmark"></i> Institutionnel</div>
+            <div class="cover-actions">
+              <a href="https://github.com/S7piner" target="_blank" rel="noopener noreferrer" class="btn-cover"><i class="fab fa-github"></i> Code Source</a>
             </div>
           </div>
-          <div class="proj-body">
-            <div class="proj-tags"><span>React Native</span><span>Laravel API</span><span>Firebase</span></div>
-            <h3>Application Mobile</h3>
-            <p>Gestion de tâches et productivité avec synchronisation cloud et notifications push.</p>
+          <div class="project-info">
+            <div class="project-tags">
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>JavaScript</span>
+              <span>UI/UX</span>
+            </div>
+            <h3 class="project-title">Mairie des Jeunes d'Adjarra</h3>
+            <p class="project-summary">
+              Portail institutionnel moderne et responsive conçu pour promouvoir les initiatives citoyennes et les projets de la jeunesse locale d'Adjarra, avec une ergonomie optimisée pour la navigation sur mobile.
+            </p>
+            <div class="project-highlights">
+              <span><i class="fas fa-check-circle"></i> Responsive Design complet</span>
+              <span><i class="fas fa-check-circle"></i> Interfaces intuitives</span>
+              <span><i class="fas fa-check-circle"></i> Optimisation SEO & UX</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJET 4 : Simulateur de Championnats de Football -->
+        <article class="project-card reveal" data-category="js">
+          <div class="project-cover">
+            <img src="https://images.unsplash.com/photo-1508098682722-e99c43a406b2?auto=format&fit=crop&w=800&q=80" alt="Simulateur de Championnats de Football" />
+            <div class="cover-badge"><i class="fas fa-futbol"></i> Moteur Algorithmique</div>
+            <div class="cover-actions">
+              <a href="https://github.com/S7piner" target="_blank" rel="noopener noreferrer" class="btn-cover"><i class="fab fa-github"></i> Code Source</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span>JavaScript</span>
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>Algorithmes</span>
+            </div>
+            <h3 class="project-title">Simulateur de Championnats Sportifs</h3>
+            <p class="project-summary">
+              Application web interactive intégrant un algorithme de génération de calendrier de rencontres, de calcul dynamique des scores, de gestion des points et de mise à jour instantanée du classement général.
+            </p>
+            <div class="project-highlights">
+              <span><i class="fas fa-check-circle"></i> Générateur automatique de matchs</span>
+              <span><i class="fas fa-check-circle"></i> Calcul des classements & stats</span>
+              <span><i class="fas fa-check-circle"></i> Rendu dynamique sans rechargement</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJET 5 : Gestion de Dépense -->
+        <article class="project-card reveal" data-category="laravel fintech">
+          <div class="project-cover">
+            <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=800&q=80" alt="Gestion de Dépense et Budget" />
+            <div class="cover-badge"><i class="fas fa-wallet"></i> Finance & Gestion</div>
+            <div class="cover-actions">
+              <a href="https://github.com/S7piner" target="_blank" rel="noopener noreferrer" class="btn-cover"><i class="fab fa-github"></i> Code Source</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span>PHP</span>
+              <span>MySQL</span>
+              <span>JavaScript</span>
+              <span>Dashboard</span>
+            </div>
+            <h3 class="project-title">Gestionnaire Financier & de Dépenses</h3>
+            <p class="project-summary">
+              Application de suivi budgétaire permettant d'enregistrer les flux de revenus et dépenses, de catégoriser les transactions et de visualiser la santé financière sous forme de récapitulatifs clairs.
+            </p>
+            <div class="project-highlights">
+              <span><i class="fas fa-check-circle"></i> Suivi des flux de trésorerie</span>
+              <span><i class="fas fa-check-circle"></i> Catégorisation intelligente</span>
+              <span><i class="fas fa-check-circle"></i> Persistance des données MySQL</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJET 6 : Événementiel -->
+        <article class="project-card reveal" data-category="js">
+          <div class="project-cover">
+            <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=800&q=80" alt="Site Vitrine Événementiel" />
+            <div class="cover-badge"><i class="fas fa-champagne-glasses"></i> Vitrine Digitale</div>
+            <div class="cover-actions">
+              <a href="https://github.com/S7piner" target="_blank" rel="noopener noreferrer" class="btn-cover"><i class="fab fa-github"></i> Code Source</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>JavaScript</span>
+              <span>Design UI</span>
+            </div>
+            <h3 class="project-title">Plateforme Vitrine Événementiel</h3>
+            <p class="project-summary">
+              Site web vitrine élégant et immersif valorisant la promotion d'événements, la présentation de plannings et l'interaction directe avec les participants via des formulaires réactifs.
+            </p>
+            <div class="project-highlights">
+              <span><i class="fas fa-check-circle"></i> Design immersif & élégant</span>
+              <span><i class="fas fa-check-circle"></i> Galerie & animations fluides</span>
+              <span><i class="fas fa-check-circle"></i> Optimisé pour tous écrans</span>
+            </div>
           </div>
         </article>
 
       </div>
+
     </div>
   </section>
 
-
-
-  <!-- CONTACT -->
-  <section id="contact">
+  <!-- PARCOURS SECTION : EXPÉRIENCES & FORMATION -->
+  <section id="parcours">
     <div class="container">
-      <div class="section-tag">Travaillons ensemble</div>
-      <h2 class="sec-title">Parlons de votre <span class="grad">projet</span></h2>
-      <p class="sec-sub">Vous avez une idée ? Contactez-moi directement — je réponds en moins de 24h.</p>
 
-      <div class="contact-grid">
+      <div class="section-header">
+        <span class="section-kicker">Expérience & Études</span>
+        <h2 class="section-title">Mon parcours <span class="gradient-text">professionnel</span></h2>
+        <p class="section-subtitle">Un cursus universitaire rigoureux complété par des stages pratiques en environnement d'entreprise.</p>
+      </div>
 
-        <div class="contact-info">
-          <div class="c-item">
-            <div class="c-icon"><i class="fas fa-envelope"></i></div>
-            <div class="c-txt">
-              <span>Email</span>
-              <strong>wilsonzannou7@gmail.com</strong>
-            </div>
-            <button class="copy-btn" onclick="copyText('wilsonzannou7@gmail.com', this)"><i class="far fa-copy"></i></button>
-          </div>
-          <div class="c-item">
-            <div class="c-icon wa"><i class="fab fa-whatsapp"></i></div>
-            <div class="c-txt">
-              <span>WhatsApp</span>
-              <strong>(+229) 52 73 98 02</strong>
-            </div>
-            <button class="copy-btn" onclick="copyText('+2290152739802', this)"><i class="far fa-copy"></i></button>
-          </div>
-          <div class="c-item">
-            <div class="c-icon"><i class="fas fa-map-marker-alt"></i></div>
-            <div class="c-txt">
-              <span>Localisation</span>
-              <strong>Cotonou, Bénin · Remote OK</strong>
+      <div class="timeline-bento">
+
+        <!-- COLONNE 1 : STAGES & EXPÉRIENCES -->
+        <div class="timeline-box reveal">
+          <div class="timeline-box-header">
+            <div class="t-icon exp"><i class="fas fa-briefcase"></i></div>
+            <div>
+              <h3>Expériences Professionnelles</h3>
+              <span class="t-sub">Stages & Missions en entreprise</span>
             </div>
           </div>
-          <div class="c-item">
-            <div class="c-icon"><i class="fas fa-clock"></i></div>
-            <div class="c-txt">
-              <span>Disponibilité</span>
-              <strong>Lun – Sam · 9h à 18h (GMT+1)</strong>
+
+          <div class="t-cards-list">
+            
+            <div class="t-card">
+              <div class="t-card-top">
+                <span class="t-period">Mars 2025 – Juin 2025</span>
+                <span class="t-chip">Stage</span>
+              </div>
+              <h4>Stagiaire Informatique</h4>
+              <div class="t-org"><i class="fas fa-building"></i> KONECT Technologies</div>
+              <ul class="t-bullets">
+                <li>Maintenance informatique préventive/corrective et assistance technique utilisateurs.</li>
+                <li>Développement et design d'interfaces web adaptées aux besoins clients.</li>
+                <li>Participation à des travaux d'électronique et d'électricité appliquée.</li>
+                <li>Support technique réactif et résolution des incidents matériels & logiciels.</li>
+              </ul>
             </div>
-          </div>
-          <div class="avail-badge">
-            <span class="dot"></span> Disponible pour de nouveaux projets
+
+            <div class="t-card">
+              <div class="t-card-top">
+                <span class="t-period">Juin 2024 – Août 2024</span>
+                <span class="t-chip">Stage</span>
+              </div>
+              <h4>Développeur Web Stagiaire</h4>
+              <div class="t-org"><i class="fas fa-building"></i> CITECH Sarl</div>
+              <ul class="t-bullets">
+                <li>Développement d'applications web complètes avec <strong>PHP Laravel</strong>.</li>
+                <li>Création, structuration et optimisation de bases de données <strong>MySQL</strong>.</li>
+                <li>Développement d'applications mobiles sous <strong>Android</strong> (Java).</li>
+                <li>Tests, recettage et maintenance corrective des fonctionnalités livrées.</li>
+              </ul>
+            </div>
+
           </div>
         </div>
 
-        <div class="contact-right">
-          <a href="mailto:wilsonzannou7@gmail.com?subject=Demande%20de%20devis&body=Bonjour%20Wilson,%0A%0AJe%20suis%20int%C3%A9ress%C3%A9(e)%20par%20vos%20services.%0A%0APr%C3%A9cisions%20:%0A"
-             class="action-card">
-            <div class="ac-icon"><i class="fas fa-envelope-open-text"></i></div>
-            <div class="ac-txt">
-              <h3>Envoyer un Email</h3>
-              <p>Idéal pour les projets détaillés, devis, ou documents à partager.</p>
-              <span class="ac-cta">Ouvrir l'email <i class="fas fa-arrow-right"></i></span>
+        <!-- COLONNE 2 : FORMATION & DIPLÔMES -->
+        <div class="timeline-box reveal">
+          <div class="timeline-box-header">
+            <div class="t-icon edu"><i class="fas fa-graduation-cap"></i></div>
+            <div>
+              <h3>Formation Académique</h3>
+              <span class="t-sub">Diplômes & Certifications</span>
             </div>
-          </a>
+          </div>
 
-          <a href="https://wa.me/2290152739802?text=Bonjour%20Wilson%20!%20Je%20suis%20int%C3%A9ress%C3%A9(e)%20par%20vos%20services."
-             target="_blank"
-             class="action-card action-wa">
-            <div class="ac-icon wa"><i class="fab fa-whatsapp"></i></div>
-            <div class="ac-txt">
-              <h3>Discuter sur WhatsApp</h3>
-              <p>Pour une réponse rapide, une question simple ou planifier un appel.</p>
-              <span class="ac-cta">Ouvrir WhatsApp <i class="fas fa-arrow-right"></i></span>
+          <div class="t-cards-list">
+            
+            <div class="t-card highlighted-edu">
+              <div class="t-card-top">
+                <span class="t-period">2022 – 2025</span>
+                <span class="t-chip edu-chip">Licence Obtenue</span>
+              </div>
+              <h4>Licence Professionnelle en Système Informatique et Logiciel (SIL)</h4>
+              <div class="t-org"><i class="fas fa-university"></i> UPAO – Bénin (Univ. Protestante de l'Afrique de l'Ouest)</div>
+              <ul class="t-bullets">
+                <li>Architectures logicielles, Programmation Orientée Objet (POO) et bases de données.</li>
+                <li>Génie logiciel, gestion de projets informatiques et méthodologies de développement.</li>
+                <li>Conception de systèmes d'information fiables et sécurisés.</li>
+              </ul>
             </div>
-          </a>
 
-          <div class="social-strip">
-            <p>Retrouvez-moi aussi sur</p>
-            <div class="socials">
-              <a href="https://github.com/" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-              <a href="https://linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
-              <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
-              <a href="https://t.me/" target="_blank"><i class="fab fa-telegram"></i> Telegram</a>
+            <div class="t-card">
+              <div class="t-card-top">
+                <span class="t-period">2022</span>
+                <span class="t-chip edu-chip">Bac Obtenu</span>
+              </div>
+              <h4>Baccalauréat Scientifique &bull; Série C</h4>
+              <div class="t-org"><i class="fas fa-school"></i> Bénin</div>
+              <ul class="t-bullets">
+                <li>Formation scientifique rigoureuse axée sur les Mathématiques et les Sciences Physiques.</li>
+                <li>Développement d'un fort esprit logique, d'analyse et de modélisation.</li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION : ACTION DIRECTE & COORDONNÉES -->
+  <section id="contact">
+    <div class="container">
+
+      <div class="section-header">
+        <span class="section-kicker">Contact & Disponibilité</span>
+        <h2 class="section-title">Prêt à collaborer sur <span class="gradient-text">votre projet</span> ?</h2>
+        <p class="section-subtitle">Disponible pour un recrutement, des missions freelance, des opportunités d'emploi ou des partenariats.</p>
+      </div>
+
+      <div class="contact-bento">
+
+        <!-- CARTE DE CONTACT RAPIDE GAUCHE -->
+        <div class="contact-card-left reveal">
+          <h3>Entrons en contact</h3>
+          <p>N'hésitez pas à me joindre directement via l'un des canaux ci-dessous :</p>
+
+          <div class="contact-quick-list">
+            
+            <div class="quick-item">
+              <div class="quick-icon"><i class="fas fa-envelope"></i></div>
+              <div class="quick-info">
+                <span>Email Professionnel</span>
+                <strong>wilsonzannou7@gmail.com</strong>
+              </div>
+              <button class="btn-copy" onclick="copyToClipboard('wilsonzannou7@gmail.com', this)" title="Copier l'email">
+                <i class="far fa-copy"></i>
+              </button>
+            </div>
+
+            <div class="quick-item">
+              <div class="quick-icon wa-icon"><i class="fab fa-whatsapp"></i></div>
+              <div class="quick-info">
+                <span>WhatsApp / Téléphone 1</span>
+                <strong>+229 01 52 73 98 02</strong>
+              </div>
+              <button class="btn-copy" onclick="copyToClipboard('+2290152739802', this)" title="Copier le numéro">
+                <i class="far fa-copy"></i>
+              </button>
+            </div>
+
+            <div class="quick-item">
+              <div class="quick-icon wa-icon"><i class="fab fa-whatsapp"></i></div>
+              <div class="quick-info">
+                <span>WhatsApp / Téléphone 2</span>
+                <strong>+229 01 60 77 80 76</strong>
+              </div>
+              <button class="btn-copy" onclick="copyToClipboard('+2290160778076', this)" title="Copier le numéro">
+                <i class="far fa-copy"></i>
+              </button>
+            </div>
+
+            <div class="quick-item">
+              <div class="quick-icon git-icon"><i class="fab fa-github"></i></div>
+              <div class="quick-info">
+                <span>GitHub</span>
+                <strong>github.com/S7piner</strong>
+              </div>
+              <a href="https://github.com/S7piner" target="_blank" rel="noopener noreferrer" class="btn-link" title="Ouvrir GitHub">
+                <i class="fas fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+
+            <div class="quick-item">
+              <div class="quick-icon loc-icon"><i class="fas fa-location-dot"></i></div>
+              <div class="quick-info">
+                <span>Localisation</span>
+                <strong>Porto-Novo, Bénin &bull; Remote OK</strong>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- CARTE D'ACTION RAPIDE DROITE -->
+        <div class="contact-card-right reveal">
+          <div class="action-box">
+            <div class="action-badge">Réponse rapide garantie</div>
+            <h3>Discuter d'une opportunité</h3>
+            <p>
+              Vous avez un projet web à développer, une équipe technique à renforcer ou une opportunité à me proposer ? Discutons-en dès aujourd'hui.
+            </p>
+
+            <div class="action-buttons-stack">
+              <a href="https://wa.me/2290152739802?text=Bonjour%20St%C3%A9phane%20Wilson%20!%20Je%20vous%20contacte%20depuis%20votre%20portfolio."
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 class="action-cta-btn wa-cta">
+                <i class="fab fa-whatsapp"></i>
+                <div>
+                  <strong>Échanger sur WhatsApp (Ligne 1)</strong>
+                  <span>+229 01 52 73 98 02</span>
+                </div>
+              </a>
+
+              <a href="https://wa.me/2290160778076?text=Bonjour%20St%C3%A9phane%20Wilson%20!%20Je%20vous%20contacte%20depuis%20votre%20portfolio."
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 class="action-cta-btn wa-cta">
+                <i class="fab fa-whatsapp"></i>
+                <div>
+                  <strong>Échanger sur WhatsApp (Ligne 2)</strong>
+                  <span>+229 01 60 77 80 76</span>
+                </div>
+              </a>
+
+              <a href="mailto:wilsonzannou7@gmail.com?subject=Opportunit%C3%A9%20Web%20-%20Portfolio&body=Bonjour%20St%C3%A9phane%20Wilson,%0A%0AJe%20vous%20contacte%20concernant%20:%0A"
+                 class="action-cta-btn mail-cta">
+                <i class="fas fa-envelope"></i>
+                <div>
+                  <strong>Envoyer un Email direct</strong>
+                  <span>wilsonzannou7@gmail.com</span>
+                </div>
+              </a>
             </div>
           </div>
         </div>
 
       </div>
+
     </div>
   </section>
 
   <!-- FOOTER -->
-  <footer>
-    <div class="container footer-top">
-      <div class="footer-brand">
-        <span class="logo">WZ</span>
-        <p>Développeur Full-Stack basé au Bénin.<br />Disponible en remote partout dans le monde.</p>
-      </div>
-      <div class="footer-cols">
-        <div>
-          <h4>Navigation</h4>
-          <a href="#about">À Propos</a>
-          <a href="#skills">Expertise</a>
-          <a href="#projects">Projets</a>
-          <a href="#experience">Parcours</a>
+  <footer id="footer">
+    <div class="container footer-content">
+      <div class="footer-top-row">
+        <div class="footer-brand">
+          <a href="#hero" class="brand-logo">
+            <span class="logo-mark">SW</span>
+            <span class="logo-text">Wilson.dev</span>
+          </a>
+          <p>
+            D. Stéphane Wilson ZANNOU &bull; Développeur Web Junior (PHP Laravel · JavaScript · MySQL).<br />
+            Diplômé de l'UPAO – Bénin &bull; Basé à Porto-Novo, Bénin.
+          </p>
         </div>
-        <div>
-          <h4>Contact</h4>
-          <a href="mailto:wilsonzannou7@gmail.com">Email</a>
-          <a href="https://wa.me/2290152739802" target="_blank">WhatsApp</a>
-          <a href="assets/cv.pdf" download>Télécharger CV</a>
+
+        <div class="footer-nav">
+          <div class="footer-col">
+            <span class="footer-col-title">Navigation</span>
+            <a href="#about">À Propos</a>
+            <a href="#stack">Stack Technique</a>
+            <a href="#projects">Projets</a>
+            <a href="#parcours">Parcours</a>
+          </div>
+          <div class="footer-col">
+            <span class="footer-col-title">Réseaux</span>
+            <a href="https://github.com/S7piner" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> GitHub</a>
+            <a href="mailto:wilsonzannou7@gmail.com"><i class="fas fa-envelope"></i> Email</a>
+            <a href="https://wa.me/2290152739802" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="footer-bot">
-      <div class="container footer-bot-inner">
-        <p>&copy; <span id="year"></span> Wilson Zannou · Tous droits réservés.</p>
-        <p>Fait avec <i class="fas fa-heart"></i> depuis Cotonou, Bénin</p>
+
+      <div class="footer-bottom-row">
+        <p>&copy; <span id="year"></span> D. Stéphane Wilson ZANNOU &bull; Tous droits réservés.</p>
+        <p class="footer-craft">Conçu & codé avec rigueur &bull; Porto-Novo, Bénin</p>
       </div>
     </div>
   </footer>
 
+  <!-- TOAST NOTIFICATION -->
   <div id="toast" class="toast"></div>
+
+  <!-- SCRIPT -->
   <script src="Page.js"></script>
 </body>
 </html>
